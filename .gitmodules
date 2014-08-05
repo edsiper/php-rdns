@@ -1,6 +1,3 @@
-[submodule "librdns"]
-	path = librdns
-	url = https://github.com/vstakhov/librdns.git
 [submodule "librdns_shared"]
 	path = librdns_shared
 	url = https://github.com/edsiper/librdns.git

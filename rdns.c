@@ -23,8 +23,8 @@
 #include <ext/standard/info.h>
 #include <Zend/zend_API.h>
 
-#include "rdns.h"
-#include "rdns_ev.h"
+#include <rdns/rdns.h>
+#include <rdns/rdns_ev.h>
 
 #define PHP_RDNS_VERSION "0.1.0"
 #define PHP_RDNS_EXTNAME "RDNS"
