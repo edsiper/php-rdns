@@ -27,7 +27,7 @@ Currently this is only a "stub" resolver, so recursion will not be supported if 
  - Unix or Linux
  - PHP 5.4 or 5.5
  - libev
-
+ - cmake
 
 ## Installation
 
@@ -39,6 +39,10 @@ $ git clone https://github.com/weheartwebsites/php-rdns.git
 $ cd php-rdns/
 $ git submodule init
 $ git submodule update
+$ mkdir librdns_shared/build
+$ cd librdns_shared/build
+$ cmake ../
+$ sudo make install
 $ phpize
 $ ./configure
 $ make
