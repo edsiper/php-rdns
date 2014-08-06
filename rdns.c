@@ -335,7 +335,7 @@ static PHP_METHOD(RDNS, addRequest)
     }
   }
   RETURN_BOOL(rdns_make_request_full(i_obj->resolver, rdns_reply_callback,
-                                     context, timeout, 0, 1,
+                                     context, timeout, 1, 1,
                                      hostname, type));
 }
 /* }}} */
