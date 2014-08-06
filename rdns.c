@@ -85,6 +85,7 @@ static void php_rdns_free(php_rdns_t *i_obj TSRMLS_DC)
 {
   zend_object_std_dtor(&i_obj->obj TSRMLS_CC);
   rdns_resolver_release(i_obj->resolver);
+  ev_loop_destroy(i_obj->loop);
   efree(i_obj);
 }
 
